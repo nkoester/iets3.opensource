@@ -80,6 +80,9 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1164991038168" name="jetbrains.mps.baseLanguage.structure.ThrowStatement" flags="nn" index="YS8fn">
+        <child id="1164991057263" name="throwable" index="YScLw" />
+      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
@@ -2410,6 +2413,65 @@
         <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
       </node>
     </node>
+    <node concept="13i0hz" id="5crSXMqvDp" role="13h7CS">
+      <property role="TrG5h" value="getContextExpression" />
+      <ref role="13i0hy" node="5crSXMpQTn" resolve="getContextExpression" />
+      <node concept="3Tm1VV" id="5crSXMqvDq" role="1B3o_S" />
+      <node concept="3clFbS" id="5crSXMqvDt" role="3clF47">
+        <node concept="3cpWs8" id="5crSXMqzAJ" role="3cqZAp">
+          <node concept="3cpWsn" id="5crSXMqzAK" role="3cpWs9">
+            <property role="TrG5h" value="context" />
+            <node concept="3Tqbb2" id="5crSXMqzAH" role="1tU5fm">
+              <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
+            </node>
+            <node concept="2OqwBi" id="5crSXMqzAL" role="33vP2m">
+              <node concept="1PxgMI" id="5crSXMqzAM" role="2Oq$k0">
+                <node concept="chp4Y" id="5crSXMqzAN" role="3oSUPX">
+                  <ref role="cht4Q" to="kfo3:8XWEtdX_Xw" resolve="QueryColDef" />
+                </node>
+                <node concept="2OqwBi" id="5crSXMqzAO" role="1m5AlR">
+                  <node concept="13iPFW" id="5crSXMqzAP" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="5crSXMqzAQ" role="2OqNvi">
+                    <ref role="3Tt5mk" to="kfo3:8XWEtdYkmU" resolve="col" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3TrEf2" id="5crSXMqzAR" role="2OqNvi">
+                <ref role="3Tt5mk" to="kfo3:8XWEtdX_Yh" resolve="expr" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5crSXMq$8E" role="3cqZAp">
+          <node concept="3clFbS" id="5crSXMq$8G" role="3clFbx">
+            <node concept="YS8fn" id="5crSXMqBEZ" role="3cqZAp">
+              <node concept="2ShNRf" id="5crSXMqBFn" role="YScLw">
+                <node concept="1pGfFk" id="5crSXMqC5H" role="2ShVmc">
+                  <ref role="37wK5l" to="wyt6:~NullPointerException.&lt;init&gt;(java.lang.String)" resolve="NullPointerException" />
+                  <node concept="Xl_RD" id="5crSXMqCn0" role="37wK5m">
+                    <property role="Xl_RC" value="No Expression defined in QueryColDef" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5crSXMq_fi" role="3clFbw">
+            <node concept="37vLTw" id="5crSXMq_3J" role="2Oq$k0">
+              <ref role="3cqZAo" node="5crSXMqzAK" resolve="context" />
+            </node>
+            <node concept="3w_OXm" id="5crSXMqBpR" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="5crSXMqwbJ" role="3cqZAp">
+          <node concept="37vLTw" id="5crSXMqzAS" role="3clFbG">
+            <ref role="3cqZAo" node="5crSXMqzAK" resolve="context" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="5crSXMqvDu" role="3clF45">
+        <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="LvU0bhyOTq">
     <property role="3GE5qa" value="multidectab" />
@@ -4272,6 +4334,16 @@
       </node>
       <node concept="3clFbS" id="2kKAjiT_53$" role="3clF47" />
     </node>
+    <node concept="13i0hz" id="5crSXMpQTn" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getContextExpression" />
+      <node concept="3Tm1VV" id="5crSXMpQTo" role="1B3o_S" />
+      <node concept="3Tqbb2" id="5crSXMpR2j" role="3clF45">
+        <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
+      </node>
+      <node concept="3clFbS" id="5crSXMpQTq" role="3clF47" />
+    </node>
     <node concept="13hLZK" id="2kKAjiT_53n" role="13h7CW">
       <node concept="3clFbS" id="2kKAjiT_53o" role="2VODD2" />
     </node>
@@ -4316,6 +4388,64 @@
         <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
       </node>
     </node>
+    <node concept="13i0hz" id="5crSXMqnb7" role="13h7CS">
+      <property role="TrG5h" value="getContextExpression" />
+      <ref role="13i0hy" node="5crSXMpQTn" resolve="getContextExpression" />
+      <node concept="3Tm1VV" id="5crSXMqnb8" role="1B3o_S" />
+      <node concept="3clFbS" id="5crSXMqnbb" role="3clF47">
+        <node concept="3cpWs8" id="5crSXMqp1e" role="3cqZAp">
+          <node concept="3cpWsn" id="5crSXMqp1f" role="3cpWs9">
+            <property role="TrG5h" value="predefY" />
+            <node concept="3Tqbb2" id="5crSXMqp1g" role="1tU5fm">
+              <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
+            </node>
+            <node concept="2OqwBi" id="5crSXMqp1h" role="33vP2m">
+              <node concept="2OqwBi" id="5crSXMqp1i" role="2Oq$k0">
+                <node concept="13iPFW" id="5crSXMqp1j" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="5crSXMqp1k" role="2OqNvi">
+                  <node concept="1xMEDy" id="5crSXMqp1l" role="1xVPHs">
+                    <node concept="chp4Y" id="5crSXMqp1m" role="ri$Ld">
+                      <ref role="cht4Q" to="kfo3:3DYDRw0K4c8" resolve="DecTab" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3TrEf2" id="5crSXMqsAt" role="2OqNvi">
+                <ref role="3Tt5mk" to="kfo3:Nuz63eZxZA" resolve="predefY" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5crSXMqnld" role="3cqZAp">
+          <node concept="3clFbS" id="5crSXMqnle" role="3clFbx">
+            <node concept="YS8fn" id="5crSXMqnlf" role="3cqZAp">
+              <node concept="2ShNRf" id="5crSXMqnlg" role="YScLw">
+                <node concept="1pGfFk" id="5crSXMqnlh" role="2ShVmc">
+                  <ref role="37wK5l" to="wyt6:~NullPointerException.&lt;init&gt;(java.lang.String)" resolve="NullPointerException" />
+                  <node concept="Xl_RD" id="5crSXMqnli" role="37wK5m">
+                    <property role="Xl_RC" value="PredefY is not defined for this Dectab" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="5crSXMqnlj" role="3clFbw">
+            <node concept="10Nm6u" id="5crSXMqnlk" role="3uHU7w" />
+            <node concept="37vLTw" id="5crSXMqsI9" role="3uHU7B">
+              <ref role="3cqZAo" node="5crSXMqp1f" resolve="predefY" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5crSXMqnlm" role="3cqZAp">
+          <node concept="37vLTw" id="5crSXMqsQn" role="3clFbG">
+            <ref role="3cqZAo" node="5crSXMqp1f" resolve="predefY" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="5crSXMqnbc" role="3clF45">
+        <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="2kKAjiT_mFH">
     <property role="3GE5qa" value="dectab" />
@@ -4356,6 +4486,64 @@
     </node>
     <node concept="13hLZK" id="2kKAjiT_mFI" role="13h7CW">
       <node concept="3clFbS" id="2kKAjiT_mFJ" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="5crSXMpS1Z" role="13h7CS">
+      <property role="TrG5h" value="getContextExpression" />
+      <ref role="13i0hy" node="5crSXMpQTn" resolve="getContextExpression" />
+      <node concept="3Tm1VV" id="5crSXMpS20" role="1B3o_S" />
+      <node concept="3clFbS" id="5crSXMpS23" role="3clF47">
+        <node concept="3cpWs8" id="5crSXMpY4Z" role="3cqZAp">
+          <node concept="3cpWsn" id="5crSXMpY50" role="3cpWs9">
+            <property role="TrG5h" value="predefX" />
+            <node concept="3Tqbb2" id="5crSXMpY4X" role="1tU5fm">
+              <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
+            </node>
+            <node concept="2OqwBi" id="5crSXMpY51" role="33vP2m">
+              <node concept="2OqwBi" id="5crSXMpY52" role="2Oq$k0">
+                <node concept="13iPFW" id="5crSXMpY53" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="5crSXMpY54" role="2OqNvi">
+                  <node concept="1xMEDy" id="5crSXMpY55" role="1xVPHs">
+                    <node concept="chp4Y" id="5crSXMpY56" role="ri$Ld">
+                      <ref role="cht4Q" to="kfo3:3DYDRw0K4c8" resolve="DecTab" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3TrEf2" id="5crSXMpY57" role="2OqNvi">
+                <ref role="3Tt5mk" to="kfo3:Nuz63eZ3Kj" resolve="predefX" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5crSXMpYtP" role="3cqZAp">
+          <node concept="3clFbS" id="5crSXMpYtR" role="3clFbx">
+            <node concept="YS8fn" id="5crSXMpZiO" role="3cqZAp">
+              <node concept="2ShNRf" id="5crSXMpZja" role="YScLw">
+                <node concept="1pGfFk" id="5crSXMqkYf" role="2ShVmc">
+                  <ref role="37wK5l" to="wyt6:~NullPointerException.&lt;init&gt;(java.lang.String)" resolve="NullPointerException" />
+                  <node concept="Xl_RD" id="5crSXMql6U" role="37wK5m">
+                    <property role="Xl_RC" value="PredefX is not defined for this Dectab" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="5crSXMpYRc" role="3clFbw">
+            <node concept="10Nm6u" id="5crSXMpYY_" role="3uHU7w" />
+            <node concept="37vLTw" id="5crSXMpYCK" role="3uHU7B">
+              <ref role="3cqZAo" node="5crSXMpY50" resolve="predefX" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5crSXMpSri" role="3cqZAp">
+          <node concept="37vLTw" id="5crSXMpY58" role="3clFbG">
+            <ref role="3cqZAo" node="5crSXMpY50" resolve="predefX" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="5crSXMpS24" role="3clF45">
+        <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
+      </node>
     </node>
   </node>
 </model>
