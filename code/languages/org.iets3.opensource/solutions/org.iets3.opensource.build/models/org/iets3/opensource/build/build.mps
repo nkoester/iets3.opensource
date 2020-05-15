@@ -12120,8 +12120,11 @@
       <property role="TrG5h" value="iets3.artifacts.root" />
       <node concept="398BVA" id="OJuIQp_r_m" role="398pKh">
         <ref role="398BVh" node="1Y5vs7yKdR8" resolve="iets3.github.opensource.home" />
-        <node concept="2Ry0Ak" id="OJuIQp_r_n" role="iGT6I">
-          <property role="2Ry0Am" value="artifacts" />
+        <node concept="2Ry0Ak" id="PR4fnYmXGY" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="PR4fnYmXH1" role="2Ry0An">
+            <property role="2Ry0Am" value="artifacts" />
+          </node>
         </node>
       </node>
     </node>
