@@ -19,16 +19,25 @@ plugins {
     id 'base'
     id 'maven-publish'
     id 'co.riiid.gradle' version '0.4.2'
+    id 'download-jbr' version '1.4.259.ea181a8'
 }
+// id 'JbrDownload' version 'feature-download-jbr.1.4.238.e613d46'
+// version '11_0_6-b520.66'
 
 // Detect jdk location, required to start ant with tools.jar on classpath otherwise javac and tests will fail
 def jdk_home
 
+println "---------------------------------- java version --------"
+println "------------------------------------------"
+
 if (ext.has('java11_home')) {
     jdk_home = ext.get('java11_home')
+    println "--1- ${jdk_home}"
 } else if (System.getenv('JB_JAVA11_HOME') != null) {
     jdk_home = System.getenv('JB_JAVA11_HOME')
+    println "--2- ${jdk_home}"
 } else {
+    println "--3- }"
     def expected = JavaVersion.VERSION_11
     if (JavaVersion.current() != expected) {
         throw new GradleException("This build script requires Java 11 but you are currently using ${JavaVersion.current()}.\nWhat you can do:\n"
@@ -37,7 +46,10 @@ if (ext.has('java11_home')) {
                 + "  * Run Gradle using Java 11")
     }
     jdk_home = System.getProperty('java.home')
+    println "--4- ${jdk_home}"
 }
+
+println "------------------------------------------"
 
 // Check JDK location
 if (!new File(jdk_home, "lib").exists()) {
@@ -156,6 +168,11 @@ repositories {
         }
     }
     mavenCentral()
+}
+
+
+downloadJbr {
+    jbrVersion = '11_0_6-b520.66'
 }
 
 task resolveMps(type: Copy) {

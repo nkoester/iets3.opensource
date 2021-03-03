@@ -1,0 +1,29 @@
+<project version="4">
+  <component name="ToolWindowManager">
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="mbeddr TODO" order="1" />
+      <window_info anchor="bottom" id="Shadow Models" order="1" />
+      <window_info anchor="bottom" id="Trace Explorer" order="1" />
+      <window_info anchor="bottom" id="Comment Tags" order="1" />
+      <window_info anchor="bottom" id="Module Dependencies" order="1" />
+      <window_info anchor="bottom" id="TODO" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Documentation" order="1" />
+      <window_info anchor="bottom" id="Inspector" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Chart" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="right" id="Context Actions 2" order="1" />
+      <window_info anchor="right" id="Search" order="1" />
+      <window_info anchor="right" id="Generated Artifacts Reviewer" order="1" />
+      <window_info anchor="right" id="Graph Viewer" order="1" />
+      <window_info anchor="right" id="Visualisation" order="1" />
+      <window_info anchor="right" id="Tree" order="1" />
+      <window_info anchor="right" id="Diagram Palette" order="1" />
+      <window_info anchor="right" id="Visualization" order="1" />
+    </layout>
+  </component>
+</project>
