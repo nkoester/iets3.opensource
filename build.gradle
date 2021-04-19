@@ -49,6 +49,9 @@ if (ext.has('java11_home')) {
     println "--4- ${jdk_home}"
 }
 
+println "---- jdk_home: ${hasProperty(jdk_home)}"
+println "---- jbr ${hasProperty(downloadJbr)}"
+//println "---- ${tasks.getByName("downloadJbr", de.itemis.mps.gradle.downloadJBR.DownloadJbrForPlatform::class).javaExecutable.absolutePath}"
 println "------------------------------------------"
 
 // Check JDK location
@@ -174,6 +177,8 @@ repositories {
 downloadJbr {
     jbrVersion = '11_0_6-b520.66'
 }
+
+println "---- jbr ${hasProperty(javaExecutable)}"
 
 task resolveMps(type: Copy) {
     dependsOn configurations.mps
