@@ -214,6 +214,7 @@
       </concept>
       <concept id="4790956042240570348" name="org.iets3.core.expr.toplevel.structure.FunctionCall" flags="ng" index="1af_rf" />
       <concept id="4790956042240148643" name="org.iets3.core.expr.toplevel.structure.Function" flags="ng" index="1aga60" />
+      <concept id="5070313213710414376" name="org.iets3.core.expr.toplevel.structure.BuilderAdapter" flags="ng" index="1lseOD" />
       <concept id="5070313213710414386" name="org.iets3.core.expr.toplevel.structure.RecordTypeAdapter" flags="ng" index="1lseON">
         <child id="5070313213710414396" name="type" index="1lseOX" />
       </concept>
@@ -3844,6 +3845,28 @@
       </node>
     </node>
     <node concept="_ixoA" id="7cphKbKM242" role="_iOnB" />
+  </node>
+  <node concept="_iOnU" id="40SlJ9BkVA6">
+    <property role="1XBH2A" value="true" />
+    <property role="TrG5h" value="forbiddenRTA" />
+    <node concept="2Ss9d8" id="40SlJ9BkVAa" role="_iOnB">
+      <property role="TrG5h" value="point" />
+      <node concept="2Ss9d7" id="40SlJ9BkVAz" role="S5Trm">
+        <property role="TrG5h" value="x" />
+        <node concept="mLuIC" id="40SlJ9BkVAD" role="2S399n" />
+      </node>
+      <node concept="2Ss9d7" id="40SlJ9BkVAW" role="S5Trm">
+        <property role="TrG5h" value="y" />
+        <node concept="mLuIC" id="40SlJ9BkVB4" role="2S399n" />
+      </node>
+    </node>
+    <node concept="_ixoA" id="40SlJ9BkVBb" role="_iOnB" />
+    <node concept="2zPypq" id="40SlJ9BkVBs" role="_iOnB">
+      <property role="TrG5h" value="myPoint" />
+      <node concept="1lsf3i" id="40SlJ9BkVDH" role="2zPyp_">
+        <node concept="1lseOD" id="40SlJ9BrBL4" role="1lsf3s" />
+      </node>
+    </node>
   </node>
 </model>
 

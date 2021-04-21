@@ -9765,5 +9765,12 @@
       <node concept="17QB3L" id="c36CPsAtHA" role="3clF45" />
     </node>
   </node>
+  <node concept="13h7C7" id="40SlJ9Bkqu4">
+    <property role="3GE5qa" value="record.builde" />
+    <ref role="13h7C2" to="yv47:40SlJ9Bkqs7" resolve="MyRecordTypeAdapter" />
+    <node concept="13hLZK" id="40SlJ9Bkqu5" role="13h7CW">
+      <node concept="3clFbS" id="40SlJ9Bkqu6" role="2VODD2" />
+    </node>
+  </node>
 </model>
 

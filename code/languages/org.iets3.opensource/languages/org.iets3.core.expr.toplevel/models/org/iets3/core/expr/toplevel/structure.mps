@@ -1240,5 +1240,11 @@
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
     </node>
   </node>
+  <node concept="1TIwiD" id="40SlJ9Bkqs7">
+    <property role="EcuMT" value="4627544216238663431" />
+    <property role="3GE5qa" value="record.builde" />
+    <property role="TrG5h" value="MyRecordTypeAdapter" />
+    <ref role="1TJDcQ" node="4ptnK4jbr8M" resolve="RecordTypeAdapter" />
+  </node>
 </model>
 

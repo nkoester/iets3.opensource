@@ -4378,5 +4378,14 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="40SlJ9Bkqsy">
+    <property role="3GE5qa" value="record.builde" />
+    <ref role="1XX52x" to="yv47:40SlJ9Bkqs7" resolve="MyRecordTypeAdapter" />
+    <node concept="1kIj98" id="40SlJ9BkqsB" role="2wV5jI">
+      <node concept="3F1sOY" id="40SlJ9BkqsN" role="1kIj9b">
+        <ref role="1NtTu8" to="yv47:4ptnK4jbr8W" resolve="type" />
+      </node>
+    </node>
+  </node>
 </model>
 
